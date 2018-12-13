@@ -1,0 +1,62 @@
+body {
+    background: lighten($color: #111113, $amount: 4)
+}
+
+.navbar {
+    padding: 0;
+    background: #111113;
+}
+
+.nav-link{
+    color: #fff;
+    font-weight: 700;
+    padding: 0px 20px;
+}
+
+a:hover {
+    color: rgb(247, 159, 28)
+}
+
+.menu-bars {
+    color: #fff;
+}
+
+
+.film-img {
+    width: 100%;
+}
+
+.film-title {
+    color: #fff;
+    margin:0;
+    margin: 5px 0px;
+    text-align: center;
+}
+
+.film-description {
+    color: rgb(211, 209, 209);
+    text-align: center;
+    & b {
+        color: #F7E61C;
+        margin-right: 15px;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .navbar img {
+        display: block;
+    }
+
+    .nav-link {
+        text-align: center;
+        margin: 15px 0px;
+    }
+}
+
+/* @media (min-width: 576px) {
+    .navbar-expand-sm .navbar-nav .nav-link {
+        padding-right: 0; 
+        padding-left: 3rem;
+    }
+} */
