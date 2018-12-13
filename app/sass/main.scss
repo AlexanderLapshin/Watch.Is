@@ -1,5 +1,10 @@
 body {
-    background: lighten($color: #111113, $amount: 4)
+    background: lighten($color: #111113, $amount: 4);
+}
+
+.container-fluid {
+    position: relative;
+    height: 100%;
 }
 
 .navbar {
@@ -11,10 +16,9 @@ body {
     color: #fff;
     font-weight: 700;
     padding: 0px 20px;
-}
-
-a:hover {
-    color: rgb(247, 159, 28)
+    &:hover {
+        color: rgb(247, 159, 28);
+    }
 }
 
 .menu-bars {
@@ -29,8 +33,13 @@ a:hover {
 .film-title {
     color: #fff;
     margin:0;
-    margin: 5px 0px;
+    padding: 5px 0px;
     text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    &:hover {
+        color: rgb(247, 159, 28);
+    }
 }
 
 .film-description {
@@ -40,6 +49,33 @@ a:hover {
         color: #F7E61C;
         margin-right: 15px;
     }
+}
+
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    margin-top: 50px;
+    background: #111113;
+    & p, .social {
+        margin: 12px 0px;
+        color: darken($color: #fff, $amount: 32);
+        line-height: 24px;
+    }
+
+    & .social {
+        font-size: 20px;
+        text-align: center;
+        & a {
+            color: darken($color: #fff, $amount: 32);
+            padding: 0px 5px;
+            &:hover {
+                color: lighten($color: #fff, $amount: 16);
+            }
+        }
+    }
+    
 }
 
 

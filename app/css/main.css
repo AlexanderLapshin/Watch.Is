@@ -1,6 +1,10 @@
 body {
   background: #1b1b1e; }
 
+.container-fluid {
+  position: relative;
+  height: 100%; }
+
 .navbar {
   padding: 0;
   background: #111113; }
@@ -9,9 +13,8 @@ body {
   color: #fff;
   font-weight: 700;
   padding: 0px 20px; }
-
-a:hover {
-  color: #f79f1c; }
+  .nav-link:hover {
+    color: #f79f1c; }
 
 .menu-bars {
   color: #fff; }
@@ -22,8 +25,12 @@ a:hover {
 .film-title {
   color: #fff;
   margin: 0;
-  margin: 5px 0px;
-  text-align: center; }
+  padding: 5px 0px;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap; }
+  .film-title:hover {
+    color: #f79f1c; }
 
 .film-description {
   color: #d3d1d1;
@@ -31,6 +38,25 @@ a:hover {
   .film-description b {
     color: #F7E61C;
     margin-right: 15px; }
+
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin-top: 50px;
+  background: #111113; }
+  footer p, footer .social {
+    margin: 12px 0px;
+    color: #adadad;
+    line-height: 24px; }
+  footer .social {
+    font-size: 20px;
+    text-align: center; }
+    footer .social a {
+      color: #adadad;
+      padding: 0px 5px; }
+      footer .social a:hover {
+        color: white; }
 
 @media screen and (max-width: 575px) {
   .navbar img {
