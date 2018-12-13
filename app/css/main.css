@@ -1,9 +1,14 @@
-body {
-  background: #1b1b1e; }
-
-.container-fluid {
-  position: relative;
+html {
   height: 100%; }
+
+body {
+  background: #1b1b1e;
+  min-height: 100%;
+  position: relative; }
+  body::after {
+    content: '';
+    height: 80px;
+    display: block; }
 
 .navbar {
   padding: 0;
@@ -19,22 +24,38 @@ body {
 .menu-bars {
   color: #fff; }
 
+.grid {
+  height: 100%;
+  position: relative; }
+
+.grid-content {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 50px 30px; }
+
 .film-img {
   width: 100%; }
 
 .film-title {
-  color: #fff;
-  margin: 0;
-  padding: 5px 0px;
-  text-align: center;
-  overflow: hidden;
-  white-space: nowrap; }
+  color: #fff; }
+  .film-title h5 {
+    margin: 0;
+    padding: 5px 0px;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: capitalize; }
   .film-title:hover {
+    text-decoration: none;
     color: #f79f1c; }
 
 .film-description {
   color: #d3d1d1;
-  text-align: center; }
+  text-align: center;
+  margin: 0; }
   .film-description b {
     color: #F7E61C;
     margin-right: 15px; }
@@ -43,15 +64,15 @@ footer {
   position: absolute;
   width: 100%;
   bottom: 0;
-  margin-top: 50px;
+  margin-top: 30px;
   background: #111113; }
   footer p, footer .social {
     margin: 12px 0px;
     color: #adadad;
-    line-height: 24px; }
+    line-height: 25px; }
   footer .social {
     font-size: 20px;
-    text-align: center; }
+    text-align: right; }
     footer .social a {
       color: #adadad;
       padding: 0px 5px; }
