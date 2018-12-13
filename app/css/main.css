@@ -24,42 +24,6 @@ body {
 .menu-bars {
   color: #fff; }
 
-.grid {
-  height: 100%;
-  position: relative; }
-
-.grid-content {
-  width: 80%;
-  margin: auto;
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 50px 30px; }
-
-.film-img {
-  width: 100%; }
-
-.film-title {
-  color: #fff; }
-  .film-title h5 {
-    margin: 0;
-    padding: 5px 0px;
-    text-align: center;
-    overflow: hidden;
-    white-space: nowrap;
-    text-transform: capitalize; }
-  .film-title:hover {
-    text-decoration: none;
-    color: #f79f1c; }
-
-.film-description {
-  color: #d3d1d1;
-  text-align: center;
-  margin: 0; }
-  .film-description b {
-    color: #F7E61C;
-    margin-right: 15px; }
-
 footer {
   position: absolute;
   width: 100%;
@@ -85,10 +49,3 @@ footer {
   .nav-link {
     text-align: center;
     margin: 15px 0px; } }
-
-/* @media (min-width: 576px) {
-    .navbar-expand-sm .navbar-nav .nav-link {
-        padding-right: 0; 
-        padding-left: 3rem;
-    }
-} */

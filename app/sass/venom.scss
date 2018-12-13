@@ -1,0 +1,85 @@
+body {
+    color: #fff;
+}
+
+.grid-content {
+    display: grid;
+    grid-gap: 40px 50px;
+    width: 60%;
+    margin: 0px 60px;
+    margin-top: 70px;
+    grid-template-areas:
+        "title"
+        "image"
+        "description"
+        "about"
+        "trailer";
+}
+
+.film-title {
+    grid-area: title;
+
+    h2 {
+        font-size: 45px;
+    }
+}
+
+.film-image {
+    grid-area: image;
+
+    & img {
+        width: 100%;
+
+        &:hover {
+            border: 1px solid #fff;
+            opacity: 0.85;
+            cursor: pointer;
+        }
+    }
+}
+
+.film-description {
+    grid-area: description;
+}
+
+.film-about {
+    grid-area: about;
+}
+
+.film-trailer {
+    grid-area: trailer;
+    .trailer {
+        text-align: center;
+        margin-top: 20px;
+    }
+}
+
+
+.grid-description {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px 20px;
+
+    .description-title {
+        font-weight: 600;
+    }
+
+    .description-value, .description-title {
+        text-transform: capitalize;
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (min-width: 720px) {
+    .grid-content {
+        margin: auto;
+        margin-top: 70px;
+        grid-template-columns: 2fr 3fr;
+        grid-template-areas:
+            "title title"
+            "image description"
+            "about about"
+            "trailer trailer";
+    }
+}

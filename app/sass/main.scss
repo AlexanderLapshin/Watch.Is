@@ -32,51 +32,6 @@ body {
     color: #fff;
 }
 
-.grid {
-    height: 100%;
-    position: relative;
-}
-
-.grid-content {
-    width: 80%;
-    margin: auto;
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 50px 30px;
-}
-
-
-.film-img {
-    width: 100%;
-}
-
-.film-title {
-    color: #fff;
-    & h5 {
-        margin:0;
-        padding: 5px 0px;
-        text-align: center;
-        overflow: hidden;
-        white-space: nowrap;
-        text-transform: capitalize;
-    }
-    &:hover {
-        text-decoration: none;
-        color: rgb(247, 159, 28);
-    }
-}
-
-.film-description {
-    color: rgb(211, 209, 209);
-    text-align: center;
-    margin: 0;
-    & b {
-        color: #F7E61C;
-        margin-right: 15px;
-    }
-}
-
 footer {
     position: absolute;
     width: 100%;
@@ -114,10 +69,3 @@ footer {
         margin: 15px 0px;
     }
 }
-
-/* @media (min-width: 576px) {
-    .navbar-expand-sm .navbar-nav .nav-link {
-        padding-right: 0; 
-        padding-left: 3rem;
-    }
-} */
