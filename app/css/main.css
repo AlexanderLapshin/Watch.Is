@@ -30,18 +30,26 @@ footer {
   bottom: 0;
   margin-top: 30px;
   background: #111113; }
-  footer p, footer .social {
-    margin: 12px 0px;
-    color: #adadad;
-    line-height: 25px; }
-  footer .social {
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(180px, 1fr));
+  margin: auto;
+  width: 80%; }
+  .footer-grid .rights,
+  .footer-grid .social {
+    color: #adadad; }
+  .footer-grid .rights p {
+    margin: 0; }
+  .footer-grid .social {
     font-size: 20px;
-    text-align: right; }
-    footer .social a {
-      color: #adadad;
-      padding: 0px 5px; }
-      footer .social a:hover {
-        color: white; }
+    text-align: right;
+    vertical-align: middle; }
+    .footer-grid .social a {
+      color: #d6d6d6;
+      padding: 0px 10px; }
+      .footer-grid .social a:hover {
+        color: #adadad; }
 
 @media screen and (max-width: 575px) {
   .navbar img {

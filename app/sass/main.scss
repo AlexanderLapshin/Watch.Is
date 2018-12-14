@@ -19,10 +19,11 @@ body {
     background: #111113;
 }
 
-.nav-link{
+.nav-link {
     color: #fff;
     font-weight: 700;
     padding: 0px 20px;
+
     &:hover {
         color: rgb(247, 159, 28);
     }
@@ -38,26 +39,38 @@ footer {
     bottom: 0;
     margin-top: 30px;
     background: #111113;
-    & p, .social {
-        margin: 12px 0px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    margin: auto;
+    width: 80%;
+
+    .rights,
+    .social {
         color: darken($color: #fff, $amount: 32);
-        line-height: 25px;
     }
 
-    & .social {
+    .rights p {
+        margin: 0;
+    }
+
+    .social {
         font-size: 20px;
         text-align: right;
-        & a {
-            color: darken($color: #fff, $amount: 32);
-            padding: 0px 5px;
+        vertical-align: middle;
+
+        a {
+            color: darken($color: #fff, $amount: 16);
+            padding: 0px 10px;
+
             &:hover {
-                color: lighten($color: #fff, $amount: 16);
+                color: darken($color: #fff, $amount: 32)
             }
         }
     }
-    
 }
-
 
 @media screen and (max-width: 575px) {
     .navbar img {
