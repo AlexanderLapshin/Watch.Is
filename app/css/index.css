@@ -32,3 +32,7 @@
   .film-description b {
     color: #F7E61C;
     margin-right: 15px; }
+
+@media screen and (max-width: 575px) {
+  .grid-content {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); } }

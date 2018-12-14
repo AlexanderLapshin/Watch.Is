@@ -5,7 +5,7 @@ body {
 .grid-content {
     display: grid;
     grid-gap: 40px 50px;
-    width: 65%;
+    width: 80%;
     margin: auto;
     margin-top: 70px;
     grid-template-areas:
@@ -53,7 +53,6 @@ body {
     .trailer {
         position: relative;
         padding-bottom: 56.25%; /* 16:9 */
-        padding-top: 25px;
         height: 0;
         text-align: center;
         margin-top: 20px;
@@ -91,6 +90,7 @@ body {
 
 @media screen and (min-width: 768px) {
     .grid-content {
+        width: 65%;
         margin-top: 70px;
         grid-template-columns: 230px 1fr;
         grid-template-areas:
