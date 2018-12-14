@@ -14,7 +14,7 @@ gulp.task('browser-sync', function() { // Создаем таск browser-sync
 		server: { // Определяем параметры сервера
 			baseDir: 'app' // Директория для сервера - app
 		},
-		index: "venom.html",
+		index: "logan.html",
 		notify: false // Отключаем уведомления
 	});
 });
